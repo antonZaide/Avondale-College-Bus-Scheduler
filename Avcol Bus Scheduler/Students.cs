@@ -6,31 +6,27 @@ namespace Avcol_Bus_Scheduler
     {
         static void Main(string[] args)
         {
+            Menu:
             Console.WriteLine("Press 1 to see all the school bus numbers");
             Console.WriteLine("Press 2 to see all the school bus routes");
+            Console.WriteLine("Press 'x' to go back ");
             var userinput = Console.ReadLine();
-            var busRoute = new Routes();
             var busNumber = new Bus();
+            var busRoute = new Route();
             while (true)
             {
                 switch (userinput)
                 {
                     case "1":
                         busNumber.Allbusnumbers();
-                        Console.Clear();
-                        Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
-                        break;
-                    
-                    default:
-                        Console.WriteLine("Chose vaild answer");
                         break;
                     case "2":
                         busRoute.Allbusroutes();
-                        Console.Clear();
-                        Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
                         break;
-
-
+                        default:
+                        Console.Clear();
+                        Console.WriteLine("Chose vaild answer, Choose the right number");
+                        goto Menu;          
                 }
                 userinput = Console.ReadLine();
             }

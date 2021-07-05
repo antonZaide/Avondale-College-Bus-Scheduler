@@ -9,18 +9,17 @@ namespace Avcol_Bus_Scheduler
         public void Allbusnumbers()
         {
         Display:
-            Console.WriteLine("    Display\n Press 1 again to exit   ");
+            Console.WriteLine("    Display\n Press 1 again to exit     ");
                 Console.WriteLine("School busses heading to Avondale College in the morning:\n");
                 string Busses = "015 Glendene - Departs 7:50 am and 7:59am\n053 Parrs Park - Departs 7:35am\n056 Forest Hill - Departs 7:26am\n072 Titirangi Village - Departs 7:55am\n\nSchool busses leaving Avondale College in the afternoon.\n\n012 New Lynn - Departs 3:30pm\n015 Glendene - Departs 3:30pm\n053 Parrs Park - Departs 3:30pm\n056 Forest Hill - Departs 3:30pm\n072 Titirangi Village - Departs 3:25pm \n ";
                 Console.WriteLine(Busses);
-          
-         
+            
         Start:
             Console.WriteLine("Search for any bus number on the display for more details.");              
             int UserSearch = int.Parse(Console.ReadLine());
             if (UserSearch == 015)
             {
-                Console.WriteLine("Glendene.");
+                Console.WriteLine("Glendene");
             
             }
             else if(UserSearch == 012)
@@ -40,9 +39,9 @@ namespace Avcol_Bus_Scheduler
             {
                 Console.WriteLine("Titirangi Village");
             }
-            else
+            else if (UserSearch == 1)
             {
-                Console.WriteLine("Chose in Valid");
+                //User returns to the menu.
             }
             switch (UserSearch)
             {
@@ -52,11 +51,11 @@ namespace Avcol_Bus_Scheduler
                     string UserReturn = Console.ReadLine();
                     switch (UserReturn)
                     {
-                        case "A":
+                        case "a":
                             Console.Clear();
                             Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
-                        case "B":
+                        case "b":
                             Console.Clear();
                             goto Display;
                     }
@@ -67,11 +66,11 @@ namespace Avcol_Bus_Scheduler
                     string UserBack = Console.ReadLine();
                     switch (UserBack)
                     {
-                        case "A":
+                        case "a":
                             Console.Clear();
                             Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
-                        case "B":
+                        case "b":
                             Console.Clear();
                             goto Display;
                     }
@@ -82,11 +81,11 @@ namespace Avcol_Bus_Scheduler
                     string ReturnUser = Console.ReadLine();
                     switch (ReturnUser)
                     {
-                        case "A":
+                        case "a":
                             Console.Clear();
                             Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
-                        case "B":
+                        case "b":
                             Console.Clear();
                             goto Display;
                     }
@@ -97,11 +96,11 @@ namespace Avcol_Bus_Scheduler
                     string BackUser = Console.ReadLine();
                     switch (BackUser)
                     {
-                        case "A":
+                        case "a":
                             Console.Clear();
                             Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
-                        case "B":
+                        case "b":
                             Console.Clear();
                             goto Display;
                     }
@@ -112,15 +111,25 @@ namespace Avcol_Bus_Scheduler
                     string UserStart = Console.ReadLine();
                     switch (UserStart)
                     {
-                        case "A":
+                        case "a":
                             Console.Clear();
                             Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
-                        case "B":
+                        case "b":
                             Console.Clear();
                             goto Display;
                     }
                     break;
+                case 1:
+                    Console.Clear();
+                    Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
+                    break;
+                default:
+                    Console.WriteLine("Your choice is invalid (Press Enter to try again)", UserSearch);
+                    Console.ReadLine();
+                    goto Start;
+                    
+                    
             }
         }
     }
