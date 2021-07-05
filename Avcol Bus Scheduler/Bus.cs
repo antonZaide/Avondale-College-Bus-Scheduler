@@ -128,8 +128,6 @@ namespace Avcol_Bus_Scheduler
                     Console.WriteLine("Your choice is invalid (Press Enter to try again)", UserSearch);
                     Console.ReadLine();
                     goto Start;
-                    
-                    
             }
         }
     }
