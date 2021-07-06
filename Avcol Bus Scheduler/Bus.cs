@@ -53,7 +53,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
+                            Console.WriteLine("Bus Numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
                             Console.Clear();
@@ -68,7 +68,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
+                            Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
                             Console.Clear();
@@ -83,7 +83,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
+                            Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
                             Console.Clear();
@@ -98,7 +98,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
+                            Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
                             Console.Clear();
@@ -113,7 +113,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine(" 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
+                            Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
                             Console.Clear();
