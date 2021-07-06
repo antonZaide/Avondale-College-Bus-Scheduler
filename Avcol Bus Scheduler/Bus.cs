@@ -9,7 +9,7 @@ namespace Avcol_Bus_Scheduler
         public void Allbusnumbers()
         {
         Display:
-            Console.WriteLine("    Display\n Press 1 again to exit     ");
+            Console.WriteLine("    School Bus Numbers\n Press 1 again to exit     ");
                 Console.WriteLine("School busses heading to Avondale College in the morning:\n");
                 string Busses = "015 Glendene - Departs 7:50 am and 7:59am\n053 Parrs Park - Departs 7:35am\n056 Forest Hill - Departs 7:26am\n072 Titirangi Village - Departs 7:55am\n\nSchool busses leaving Avondale College in the afternoon.\n\n012 New Lynn - Departs 3:30pm\n015 Glendene - Departs 3:30pm\n053 Parrs Park - Departs 3:30pm\n056 Forest Hill - Departs 3:30pm\n072 Titirangi Village - Departs 3:25pm \n ";
                 Console.WriteLine(Busses);

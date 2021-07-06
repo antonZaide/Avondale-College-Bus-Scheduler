@@ -9,12 +9,14 @@ namespace Avcol_Bus_Scheduler
         public void Allbusroutes()
         {
         Start:
-            Console.WriteLine("School Bus Routes\n");
+            //The school bus routes in the morning has been displayed for the user.
+            Console.WriteLine("School Bus Routes\n Press 2 again to exit");
             Console.WriteLine("You could search for any School bus route to see more information and routes.\n");
             Console.WriteLine("School bus routes in the morning:\nStarting route and end of route of school busses in the morning\n\n Glendene 015 - Tirimoana Rd. to Avondale College\n\n Parrs Park 053 - 108 Parrs Cross Rd. to Avondale College\n\n Forest Hill 056 - Opp 125 Forest Hill Rd. to Avondale College\n\n Titirangi Village 072 - Titirangi Village to Avondale College\n");
-            
+            //The school bus routes in the afternoon has also been displayed for the user.
             Console.WriteLine("School bus routes in the afternoon:\nStarting route and end of route of the school busses in the afternoon\n\n New Lynn 012 - Avondale College Bus bay to New Lynn interchange\n\n Glendene 015 - Avondale College Bus bay to Te Atatu Rd.\n\n Parrs Park 053 - Avondale College Bus bay to Parrs Cross Rd.\n\n Forest Hill 056 - Avodale College Bus bay to Forest Hill Rd.\n\n Titirangi Village 072 - Avondale College Bus bay to Titirangi Village\n");
             Search:
+            //if User searches any bus routes > the full school bus routes in the morning and the afternoon will be displayed.
             Console.WriteLine("Search any school bus Routes:");
             string UserSearchRoutes = string.Format(Console.ReadLine());
             Console.WriteLine(UserSearchRoutes);
