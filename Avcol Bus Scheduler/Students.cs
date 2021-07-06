@@ -9,7 +9,6 @@ namespace Avcol_Bus_Scheduler
             Menu:
             Console.WriteLine("Press 1 to see all the school bus numbers");
             Console.WriteLine("Press 2 to see all the school bus routes");
-            Console.WriteLine("Press 'x' to go back ");
             var userinput = Console.ReadLine();
             var busNumber = new Bus();
             var busRoute = new Route();
@@ -25,7 +24,7 @@ namespace Avcol_Bus_Scheduler
                         break;
                         default:
                         Console.Clear();
-                        Console.WriteLine("Chose vaild answer, Choose the right number");
+                        Console.WriteLine("Chose vaild answer, Choose 1 or 2");
                         goto Menu;          
                 }
                 userinput = Console.ReadLine();
