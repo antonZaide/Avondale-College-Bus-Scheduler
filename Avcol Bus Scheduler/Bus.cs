@@ -47,7 +47,7 @@ namespace Avcol_Bus_Scheduler
             {
                 case 015:
                     Console.WriteLine("Departs in the morning: 7:50am & 7:54am/ Afternoon: 3:30pm\n Operator: NZ Bus");
-                    Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
+                    Console.WriteLine("Press A to search for another bus number or B to back to the display.");
                     string UserReturn = Console.ReadLine();
                     switch (UserReturn)
                     {

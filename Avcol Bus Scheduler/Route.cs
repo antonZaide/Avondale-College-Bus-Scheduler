@@ -9,36 +9,42 @@ namespace Avcol_Bus_Scheduler
         public void Allbusroutes()
         {
             Start:
-            Console.WriteLine("You could search for any School bus route to see more information and routes.");
-            Console.WriteLine("School bus routes in the morning:\n\n Starting route and end of route of school busses in the morning display\n 015 Glendene - Tirimoana Rd. to Avondale College\n 053 Parrs Park - 108 Parrs Cross Rd. to Avondale College\n 056 Forest Hill - Opp 125 Forest Hill Rd. to Avondale College\n 072 Titirangi Village - Titirangi Village to Avondale College\n");
-           
-            Console.WriteLine("School bus routes in the afternoon:\n\n Starting route and end of route of the school busses in the afternoon display\n 012 New Lynn - Avondale College Bus bay to New Lynn interchange\n 015 Glendene - Avondale College Bus bay to Te Atatu Rd.\n 053 Parrs Park - Avondale College Bus bay to Parrs Cross Rd.\n 056 Forest Hill - Avodale College Bus bay to Forest Hill Rd.\n 072 Titirangi Village - Avondale College Bus bay to Titirangi Village");
+            Console.WriteLine("You could search for any School bus route to see more information and routes.\n");
+            Console.WriteLine("School bus routes in the morning:\n\n Starting route and end of route of school busses in the morning display\n Glendene 015 - Tirimoana Rd. to Avondale College\n Parrs Park 053 - 108 Parrs Cross Rd. to Avondale College\n Forest Hill 056 - Opp 125 Forest Hill Rd. to Avondale College\n Titirangi Village 072 - Titirangi Village to Avondale College\n");
+            
+            Console.WriteLine("School bus routes in the afternoon:\n\n Starting route and end of route of the school busses in the afternoon display\n New Lynn 012 - Avondale College Bus bay to New Lynn interchange\n Glendene 015 - Avondale College Bus bay to Te Atatu Rd.\n Parrs Park 053 - Avondale College Bus bay to Parrs Cross Rd.\n Forest Hill 056 - Avodale College Bus bay to Forest Hill Rd.\n Titirangi Village 072 - Avondale College Bus bay to Titirangi Village");
+            Search:
             Console.WriteLine("Search:");
             string UserSearchRoutes = string.Format(Console.ReadLine());
             Console.WriteLine(UserSearchRoutes);
             if (UserSearchRoutes == "New Lynn")
             {
                 Console.Clear();
+                Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.WriteLine("'Afternoon only'- Avondale College Bus Bay, Rosebank Rd, Great North Rd, Veronica St, Totara Ave, Stop D New Lynn Interchange");
             }
             else if (UserSearchRoutes == "Glendene")
             {
                 Console.Clear();
+                Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.WriteLine("Morning - 2 Tirimoana Rd, Glendene Avenue, Farquhar Rd, Phelps Place, Hepburn Rd, Butterworth Dr, Sabulite Rd, St Leonards Rd, Archibald Rd, Archlynn Rd, Kelwyn Rd, Rimu St, Lynwood Rd, Nikau St, Rimu St, Rata St, Ash St, Rosebank Rd, Aspen Rd, Victor St, Avondale College.");
             }
             else if (UserSearchRoutes == "Parrs Park ")
             {
                 Console.Clear();
+                Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.WriteLine("Morning - From 108 Parrs Cross Rd, West Coast, Rosier, Glengarry, Nandana, Kashmir, Withers, Glendale, West Coast, Great North, Rata, Ash, Rosebank, Aspen, Victor, Avondale College");
             }
             else if (UserSearchRoutes == "Forest Hill")
             {
                 Console.Clear();
+                Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.WriteLine("Morning - Opp 125 Forest Hill Rd, Forest Hill Rd, West Coast Rd, Sunvue Rd, Solar Rd, Glengarry Rd, Nandana Dr, Kashmir Rd, Withers Rd, Glendale Rd, West Coast Rd, Great North Rd, Rata St, Ash St, Rosebank Rd, Aspen St, Victor St, Avondale College Bus Bay. ");
             }
             else if (UserSearchRoutes == "Titirangi Village")
             {
                 Console.Clear();
+                Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.WriteLine(" Morning - Titirangi Village, Titirangi, Rata, Ash, Rosebank, Aspen, Victor, Avondale College.");
             }
             else if (UserSearchRoutes == "2")
@@ -48,20 +54,16 @@ namespace Avcol_Bus_Scheduler
             switch (UserSearchRoutes)
             {
                 case "New Lynn":
-                    Console.WriteLine("New Lynn School bus only afternoon");
                     string UserSearchReturn = Console.ReadLine();
                     switch (UserSearchReturn)
                     {
                         case "a":
                             Console.Clear();
                             Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
-                            break;
+                            goto Search;
                         case "b":
                             Console.Clear();
-                            Console.WriteLine("Main Menu/ Press Enter to see the list again");
-                            Console.ReadLine();
-                            Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
-                            break;
+                            goto Start;
                     }
                     break;
                 case "Glendene":
@@ -72,13 +74,10 @@ namespace Avcol_Bus_Scheduler
                         case "a":
                             Console.Clear();
                             Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
-                            break;
+                            goto Search;
                         case "b":
                             Console.Clear();
-                            Console.WriteLine("Main Menu/ Press Enter to see the list again");
-                            Console.ReadLine();
-                            Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
-                            break;
+                            goto Start;
                     }
                     break;
                 case "Parrs Park":
@@ -89,13 +88,10 @@ namespace Avcol_Bus_Scheduler
                         case "a":
                             Console.Clear();
                             Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
-                            break;
+                            goto Search;
                         case "b":
                             Console.Clear();
-                            Console.WriteLine("Main Menu/ Press Enter to see the list again");
-                            Console.ReadLine();
-                            Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
-                            break;
+                            goto Start;
                     }
                     break;
                 case "Forest Hill":
@@ -106,13 +102,10 @@ namespace Avcol_Bus_Scheduler
                         case "a":
                             Console.Clear();
                             Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
-                            break;
+                            goto Search;
                         case "b":
                             Console.Clear();
-                            Console.WriteLine("Main Menu/ Press Enter to see the list again");
-                            Console.ReadLine();
-                            Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
-                            break;
+                              goto Start;
                     }
                     break;
                 case "Titirangi Village":
@@ -123,13 +116,10 @@ namespace Avcol_Bus_Scheduler
                         case "a":
                             Console.Clear();
                             Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
-                            break;
+                            goto Search;
                         case "b":
                             Console.Clear();
-                            Console.WriteLine("Main Menu/ Press Enter to see the list again");
-                            Console.ReadLine();
-                            Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
-                            break;
+                            goto Start;
                     }
                     break;
                 case "2":
@@ -137,9 +127,9 @@ namespace Avcol_Bus_Scheduler
                     Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
                     break;
                 default:
-                    Console.WriteLine("Your choice is invalid (Press Enter to try again)", UserSearchRoutes);
+                    Console.WriteLine("The bus route you typed is invalid (Press Enter to try again)", UserSearchRoutes);
                     Console.ReadLine();
-                    goto Start;
+                    goto Search;
             } 
         }
     }
