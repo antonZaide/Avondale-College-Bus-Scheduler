@@ -64,7 +64,7 @@ namespace Avcol_Bus_Scheduler
                         //If user presses "a" then the user will search for another bus route.
                         case "a":
                             Console.Clear();
-                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
+                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village\n New Lynn");
                             goto Search;
                             // If user presses "b" then the user will be back at the displayed start to finish routes.
                         case "b":
@@ -79,7 +79,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
+                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village\n New Lynn");
                             goto Search;
                         case "b":
                             Console.Clear();
@@ -93,7 +93,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
+                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village\n New Lynn");
                             goto Search;
                         case "b":
                             Console.Clear();
@@ -107,7 +107,7 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
+                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village\n New Lynn");
                             goto Search;
                         case "b":
                             Console.Clear();
@@ -121,18 +121,19 @@ namespace Avcol_Bus_Scheduler
                     {
                         case "a":
                             Console.Clear();
-                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village");
+                            Console.WriteLine("Routes to Search :\n Glendene\n Parrs Park\n Forest Hill\n Titirangi Village\n New Lynn");
                             goto Search;
                         case "b":
                             Console.Clear();
                             goto Start;
                     }
                     break;
-                // if user presses "2" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to chose again. 
+                // if user presses "2" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to choose again. 
                 case "2":
                     Console.Clear();
                     Console.WriteLine("         Avcol Bus Schedule      ");
                     Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
+                    Console.WriteLine("Press 3 to exit app");
                     break;
                 default:
                     Console.WriteLine("The bus route you typed is invalid (Press Enter to try again)", UserSearchRoutes);

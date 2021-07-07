@@ -122,10 +122,11 @@ namespace Avcol_Bus_Scheduler
                     }
                     break;
                 case "1":
-                    // if user presses "1" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to chose again. 
+                    // if user presses "1" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to choose again. 
                     Console.Clear();
                     Console.WriteLine("        Avcol Bus Schedule     ");
                     Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
+                    Console.WriteLine("Press 3 to exit app");
                     break;
                 default:
                     Console.WriteLine("Your choice is invalid (Press Enter to try again)", UserSearch);

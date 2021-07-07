@@ -30,7 +30,7 @@ namespace Avcol_Bus_Scheduler
                         break;
                         default:
                         Console.Clear();
-                        Console.WriteLine("Chose vaild answer, Choose 1 or 2");
+                        Console.WriteLine("'There has been an error', Choose 1, 2 ,or 3 to exit ");
                         goto Menu;
                     case "3":
                         return;
