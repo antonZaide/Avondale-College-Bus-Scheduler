@@ -9,14 +9,24 @@ namespace Avcol_Bus_Scheduler
         public void Allbusnumbers()
         {
         Display:
-            Console.WriteLine("    School Bus Numbers\n Press 1 again to exit     ");//User can leave any time by pressing 1 again in the bus numbers table.
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("    School Bus Numbers   ");//User can leave any time by pressing 1 again in the bus numbers table.
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("Press 1 again to 'Exit'");
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("School busses heading to Avondale College in the morning:\n");
-                string Busses = "015 Glendene - Departs 7:50 am and 7:59am\n053 Parrs Park - Departs 7:35am\n056 Forest Hill - Departs 7:26am\n072 Titirangi Village - Departs 7:55am\n\nSchool busses leaving Avondale College in the afternoon.\n\n012 New Lynn - Departs 3:30pm\n015 Glendene - Departs 3:30pm\n053 Parrs Park - Departs 3:30pm\n056 Forest Hill - Departs 3:30pm\n072 Titirangi Village - Departs 3:25pm \n ";
-                Console.WriteLine(Busses);
-            //User already sees the bus numbers in the mornning and afternoon diplayed.
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("015 Glendene - Departs 7:50 am and 7:59am\n053 Parrs Park - Departs 7:35am\n056 Forest Hill - Departs 7:26am\n072 Titirangi Village - Departs 7:55am\n");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("School busses leaving Avondale College in the afternoon");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("012 New Lynn - Departs 3:30pm\n015 Glendene - Departs 3:30pm\n053 Parrs Park - Departs 3:30pm\n056 Forest Hill - Departs 3:30pm\n072 Titirangi Village - Departs 3:25pm\n");
+        //User already sees the bus numbers in the mornning and afternoon diplayed.
         Start:
             //User could search for a bus number for a clear bus information and deatails.
-            Console.WriteLine("Search for any bus number on the display for more details.");              
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Search for any bus number on the display for more details.");
+            Console.ForegroundColor = ConsoleColor.White;
             string UserSearch = string.Format(Console.ReadLine());
             if (UserSearch == "015")
             {
@@ -45,14 +55,18 @@ namespace Avcol_Bus_Scheduler
             switch (UserSearch)
             {
                 case "015":
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:50am & 7:54am/ Afternoon: 3:30pm\n Operator: NZ Bus");
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Press A to search for another bus number or B to back to the display.");
+                    Console.ForegroundColor = ConsoleColor.White;
                     string UserReturn = Console.ReadLine();
                     switch (UserReturn)
                     {
                         //If User presess "a" then the user gets a chance to search for another bus number.
                         case "a":
                             Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.WriteLine("Bus Numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                             //If User presses "b" then the user goes back to the bus number diplays.
@@ -62,13 +76,17 @@ namespace Avcol_Bus_Scheduler
                     }
                     break;
                 case "012":
-                    Console.WriteLine("Departs in the afternoon: 3:30pm\n Operator: Pavlovich Coachlines");
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine("Departs in the afternoon only: 3:30pm\n Operator: Pavlovich Coachlines");
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
+                    Console.ForegroundColor = ConsoleColor.White;
                     string UserBack = Console.ReadLine();
                     switch (UserBack)
                     {
                         case "a":
                             Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
@@ -77,13 +95,17 @@ namespace Avcol_Bus_Scheduler
                     }
                     break;
                 case "053":
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:35am/ Afternoon: 3:30pm\n Operator: Pavolovich Coach Lines");
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
+                    Console.ForegroundColor = ConsoleColor.White;
                     string ReturnUser = Console.ReadLine();
                     switch (ReturnUser)
                     {
                         case "a":
                             Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
@@ -92,13 +114,17 @@ namespace Avcol_Bus_Scheduler
                     }
                     break;
                 case "056":
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:26am/ Afternoon: 3:30pm\n Operator: Pavlovich Coach Lines ");
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
+                    Console.ForegroundColor = ConsoleColor.White;
                     string BackUser = Console.ReadLine();
                     switch (BackUser)
                     {
                         case "a":
                             Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
@@ -107,13 +133,17 @@ namespace Avcol_Bus_Scheduler
                     }
                     break;
                 case "072":
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:55am/ Afternoon: 3:25pm\n Operator: Ritchies Transport");
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
+                    Console.ForegroundColor = ConsoleColor.White;
                     string UserStart = Console.ReadLine();
                     switch (UserStart)
                     {
                         case "a":
                             Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
                             Console.WriteLine("Bus numbers to search:\n 015 - Glendene\n 012 - New Lynn\n 053 - Parrs Park\n 056 - Forest Hill\n 072 - Titirangi Village");
                             goto Start;
                         case "b":
@@ -124,14 +154,21 @@ namespace Avcol_Bus_Scheduler
                 case "1":
                     // if user presses "1" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to choose again. 
                     Console.Clear();
-                    Console.WriteLine("        Avcol Bus Schedule     ");
-                    Console.WriteLine("Press 1 to see all the school bus numbers\nPress 2 to see all the school bus routes");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("         Avcol Bus Schedule\n     ");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Press 1 to see all the school bus numbers\n");
+                    Console.WriteLine("Press 2 to see all the school bus routes\n");
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Press 3 to exit app");
+                    Console.ForegroundColor = ConsoleColor.White;
                     break;
                 default:
-                    Console.WriteLine("Your choice is invalid (Press Enter to try again)", UserSearch);
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(" The number you had type must have been invalid.\n(Please press 'Enter' to try again and to see what the display of school bus numbers shows.)", UserSearch);
                     Console.ReadLine();
-                    goto Start;
+                    Console.Clear();
+                    goto Display;
             }
         }
     }
