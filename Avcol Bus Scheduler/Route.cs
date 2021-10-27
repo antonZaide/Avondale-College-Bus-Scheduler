@@ -9,27 +9,27 @@ namespace Avcol_Bus_Scheduler
         public void Allbusroutes()
         {
         Start:
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("     School Bus Routes        ");//User can leave any time by pressing 2 again in the bus routes table.
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("\t\t\tSchool Bus Routes\t\t\t");//User can leave any time by pressing 2 again in the bus routes table.
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Press 2 again to'Exit'\n");
             //The User can search for any school bus route that is already being shown to them.
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("You could search for any School bus route to see more information and routes.\n");
             //The school bus routes in the morning from starting to end has been displayed for the user.
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("School bus routes in the morning:");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("Starting route and end of route of school busses in the morning\n\n Glendene 015 - Tirimoana Rd. to Avondale College\n\n Parrs Park 053 - 108 Parrs Cross Rd. to Avondale College\n\n Forest Hill 056 - Opp 125 Forest Hill Rd. to Avondale College\n\n Titirangi Village 072 - Titirangi Village to Avondale College\n");
+            Console.WriteLine("Starting location and end of route of school busses in the morning.\n\n Location: Glendene 015 - Tirimoana Rd. to Avondale College\n\n Location: Parrs Park 053 - 108 Parrs Cross Rd. to Avondale College\n\n Location: Forest Hill 056 - Opp 125 Forest Hill Rd. to Avondale College\n\n Location: Titirangi Village 072 - Titirangi Village to Avondale College\n");
             //The school bus routes in the afternoon from starting to end has also been displayed for the user.
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("School bus routes in the afternoon:");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("Starting route and end of route of the school busses in the afternoon\n\n New Lynn 012 - Avondale College Bus bay to New Lynn interchange\n\n Glendene 015 - Avondale College Bus bay to Te Atatu Rd.\n\n Parrs Park 053 - Avondale College Bus bay to Parrs Cross Rd.\n\n Forest Hill 056 - Avodale College Bus bay to Forest Hill Rd.\n\n Titirangi Village 072 - Avondale College Bus bay to Titirangi Village\n");
+            Console.WriteLine("Starting location and end of route of the school busses in the afternoon.\n\n Location: New Lynn 012 - Avondale College Bus bay to New Lynn interchange\n\n Location: Glendene 015 - Avondale College Bus bay to Te Atatu Rd.\n\n Location: Parrs Park 053 - Avondale College Bus bay to Parrs Cross Rd.\n\n Location: Forest Hill 056 - Avodale College Bus bay to Forest Hill Rd.\n\n Location: Titirangi Village 072 - Avondale College Bus bay to Titirangi Village\n");
         Search:
             //if User searches any bus routes > the full school bus routes in the morning and the afternoon will be displayed.
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Search: Type the bus numbers starting route in order to see the full school bus routes.");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Search: Type the bus location in order to see the full school bus routes.");
             Console.ForegroundColor = ConsoleColor.White;
             string UserSearchRoutes = string.Format(Console.ReadLine());
             Console.WriteLine(UserSearchRoutes);
@@ -37,7 +37,7 @@ namespace Avcol_Bus_Scheduler
             {
                 // The console.clear makes it easier for the user to see what they searched because it clears everything excepect for what route they searched.
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("'Afternoon only'- Avondale College Bus Bay, Rosebank Rd, Great North Rd,\n Veronica St, Totara Ave, Stop D New Lynn Interchange - bus routes end\n");
@@ -46,7 +46,7 @@ namespace Avcol_Bus_Scheduler
             else if (UserSearchRoutes == "Glendene")
             {
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("Morning - 2 Tirimoana Rd, Glendene Avenue, Farquhar Rd, Phelps Place, Hepburn Rd, Butterworth Dr, Sabulite Rd,\n St Leonards Rd, Archibald Rd, Archlynn Rd, Kelwyn Rd, Rimu St, Lynwood Rd, Nikau St, Rimu St, Rata St,\n Ash St, Rosebank Rd, Aspen Rd, Victor St, Avondale College.\n\n");
@@ -54,7 +54,7 @@ namespace Avcol_Bus_Scheduler
             else if (UserSearchRoutes == "Parrs Park")
             {
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("Morning - From 108 Parrs Cross Rd, West Coast, Rosier, Glengarry, Nandana, Kashmir, Withers, Glendale, West Coast,\n Great North, Rata, Ash, Rosebank, Aspen, Victor, Avondale College\n\n");
@@ -62,7 +62,7 @@ namespace Avcol_Bus_Scheduler
             else if (UserSearchRoutes == "Forest Hill")
             {
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("Morning - Opp 125 Forest Hill Rd, Forest Hill Rd, West Coast Rd, Sunvue Rd, Solar Rd, Glengarry Rd, Nandana Dr,\n Kashmir Rd, Withers Rd, Glendale Rd, West Coast Rd, Great North Rd, Rata St, Ash St, Rosebank Rd, Aspen St,\n Victor St, Avondale College Bus Bay.\n\n ");
@@ -70,7 +70,7 @@ namespace Avcol_Bus_Scheduler
             else if (UserSearchRoutes == "Titirangi Village")
             {
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Press A to search for another bus route or B to go back to the school bus routes display\n ");
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine(" Morning - Titirangi Village, Titirangi, Rata, Ash, Rosebank, Aspen, Victor, Avondale College\n\n");
@@ -166,8 +166,10 @@ namespace Avcol_Bus_Scheduler
                 // if user presses "2" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to choose again. 
                 case "2":
                     Console.Clear();
-                    Console.WriteLine("         Avcol Bus Schedule\n      ");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("\t\t\tAvcol Bus Schedule\t\t\t");
+                    Console.WriteLine("\t\t\t~~~~~~~~~~~~~~~~~~\n");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press 1 to see all the school bus numbers\n");
                     Console.WriteLine("Press 2 to see all the school bus routes\n");
                     Console.ForegroundColor = ConsoleColor.DarkRed;

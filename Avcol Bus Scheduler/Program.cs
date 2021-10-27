@@ -2,19 +2,20 @@
 
 namespace Avcol_Bus_Scheduler
 {
-    class Students
+    class Program
     {
         static void Main(string[] args)
         {
         Menu:
             // The programme starts with a display of the two options.
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("         Avcol Bus Schedule\n    ");
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("\t\t\tAvcol Bus Schedule\t\t\t");
+            Console.WriteLine("\t\t\t~~~~~~~~~~~~~~~~~~\n");
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Press 1 to see all the school bus numbers\n");
             Console.WriteLine("Press 2 to see all the school bus routes\n");
             Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("Press 3 to exit app");
+            Console.WriteLine("Press 3 to exit the app");
             Console.ForegroundColor = ConsoleColor.White;
 
             var userinput = Console.ReadLine();

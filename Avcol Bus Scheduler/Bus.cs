@@ -9,22 +9,22 @@ namespace Avcol_Bus_Scheduler
         public void Allbusnumbers()
         {
         Display:
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("    School Bus Numbers   ");//User can leave any time by pressing 1 again in the bus numbers table.
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("\t\tSchool Bus Numbers\t\t");//User can leave any time by pressing 1 again in the bus numbers table.
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Press 1 again to 'Exit'");
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("School busses heading to Avondale College in the morning:\n");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("015 Glendene - Departs 7:50 am and 7:59am\n053 Parrs Park - Departs 7:35am\n056 Forest Hill - Departs 7:26am\n072 Titirangi Village - Departs 7:55am\n");
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("School busses leaving Avondale College in the afternoon");
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("012 New Lynn - Departs 3:30pm\n015 Glendene - Departs 3:30pm\n053 Parrs Park - Departs 3:30pm\n056 Forest Hill - Departs 3:30pm\n072 Titirangi Village - Departs 3:25pm\n");
         //User already sees the bus numbers in the mornning and afternoon diplayed.
         Start:
-            //User could search for a bus number for a clear bus information and deatails.
-            Console.ForegroundColor = ConsoleColor.Blue;
+            //User could search for a bus number for a clear bus information and details.
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Search for any bus number on the display for more details.");
             Console.ForegroundColor = ConsoleColor.White;
             string UserSearch = string.Format(Console.ReadLine());
@@ -57,7 +57,7 @@ namespace Avcol_Bus_Scheduler
                 case "015":
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:50am & 7:54am/ Afternoon: 3:30pm\n Operator: NZ Bus");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press A to search for another bus number or B to back to the display.");
                     Console.ForegroundColor = ConsoleColor.White;
                     string UserReturn = Console.ReadLine();
@@ -77,8 +77,8 @@ namespace Avcol_Bus_Scheduler
                     break;
                 case "012":
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine("Departs in the afternoon only: 3:30pm\n Operator: Pavlovich Coachlines");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("Departs in the 'afternoon only': 3:30pm\n Operator: Pavlovich Coachlines");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
                     Console.ForegroundColor = ConsoleColor.White;
                     string UserBack = Console.ReadLine();
@@ -97,7 +97,7 @@ namespace Avcol_Bus_Scheduler
                 case "053":
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:35am/ Afternoon: 3:30pm\n Operator: Pavolovich Coach Lines");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
                     Console.ForegroundColor = ConsoleColor.White;
                     string ReturnUser = Console.ReadLine();
@@ -116,7 +116,7 @@ namespace Avcol_Bus_Scheduler
                 case "056":
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:26am/ Afternoon: 3:30pm\n Operator: Pavlovich Coach Lines ");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
                     Console.ForegroundColor = ConsoleColor.White;
                     string BackUser = Console.ReadLine();
@@ -135,7 +135,7 @@ namespace Avcol_Bus_Scheduler
                 case "072":
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine("Departs in the morning: 7:55am/ Afternoon: 3:25pm\n Operator: Ritchies Transport");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press A to return to search for another bus number or B to back to the display.");
                     Console.ForegroundColor = ConsoleColor.White;
                     string UserStart = Console.ReadLine();
@@ -155,8 +155,9 @@ namespace Avcol_Bus_Scheduler
                     // if user presses "1" it clears everyting and the User goes back to the menu then gives the user thesame options from the menu to choose again. 
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.WriteLine("         Avcol Bus Schedule\n     ");
-                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine("\t\t\tAvcol Bus Schedule\t\t\t");
+                    Console.WriteLine("\t\t\t~~~~~~~~~~~~~~~~~~\n");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("Press 1 to see all the school bus numbers\n");
                     Console.WriteLine("Press 2 to see all the school bus routes\n");
                     Console.ForegroundColor = ConsoleColor.DarkRed;
