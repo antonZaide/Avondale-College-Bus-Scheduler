@@ -38,7 +38,7 @@ namespace Avcol_Bus_Scheduler
                         default:
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("'There has been an error', Choose 1, 2 ,or 3 to exit ");
+                        Console.WriteLine("'There has been an error', Choose 1 for bus numbers, 2 for the bus routes, or 3 to exit ");
                         goto Menu;
                     case "3":
                         return;
